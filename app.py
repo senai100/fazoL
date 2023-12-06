@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, jsonify
 from datetime import datetime
+from flask_cors import CORS
 import speedtest
 
 app = Flask(__name__)
+CORS(app)
 
 historico = []
 
